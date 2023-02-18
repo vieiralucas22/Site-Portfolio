@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 :root {
-  --background-color: #012626;
-  --primary-color: #04bfad;
-  --secundary-color: #038c7f;
-  --tertiary-color: #027368;
+  --background-color: #293037;
+  --primary-color: #bb1d24;
+  --secundary-color: #fff;
+  --tertiary-color: #000;
+}
+body {
+  background-color: var(--background-color);
 }
