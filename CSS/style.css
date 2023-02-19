@@ -6,7 +6,7 @@
 }
 :root {
   --background-color: #1d1b1b;
-  --background-color-secundary: #333333;
+  --background-color-secundary: #171717;
   --primary-color: #bb1d24;
   --secundary-color: #fff;
   --tertiary-color: #000;
@@ -25,15 +25,12 @@ a:hover {
   opacity: 0.7;
 }
 .logo {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  width: 3.5rem;
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
   height: 10vh;
 }
 .nav-list {
@@ -53,40 +50,12 @@ nav {
 
 .menu-hamburguer div {
   width: 2rem;
-  height: 0.125rem;
-  background-color: var(--secundary-color);
+  height: 0.2rem;
+  background-color: var(--primary-color);
   margin: 0.5rem;
   transition: 0.3s;
 }
 
-/* Media queries */
-
-@media (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 100vw;
-    height: 92vh;
-    background-color: var(--background-color);
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-  .nav-list li {
-    margin-right: 0;
-    margin-top: 1rem;
-    opacity: 0;
-  }
-  .menu-hamburguer {
-    display: block;
-  }
-}
 .nav-list.active {
   transform: translateX(0);
 }
@@ -110,4 +79,74 @@ nav {
 }
 .menu-hamburguer.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.container {
+  margin: 1rem 1.25rem;
+}
+/* Seção Home */
+#home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+#home div {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+#home h1 {
+  text-align: center;
+  font-size: 2.1rem;
+}
+.button {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px 25px;
+  padding: 15px;
+  font-size: 1.125rem;
+}
+a.button:hover {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+}
+.img-home {
+  display: none;
+}
+
+/* Sobre Mim */
+
+#about {
+  min-height: 100vh;
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    margin-top: 1.3rem;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 92vh;
+    background-color: var(--background-color-secundary);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-right: 0;
+    margin-top: 1rem;
+    opacity: 0;
+  }
+  .menu-hamburguer {
+    display: block;
+  }
 }
