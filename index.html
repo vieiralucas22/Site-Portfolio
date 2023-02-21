@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfólio</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -16,13 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@100&family=Permanent+Marker&family=Silkscreen&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f54cbca3cb.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="shortcut icon" href="./IMGS/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- Header -->
     <header class="container">
       <nav>
-        <img src="./IMGS/Logo.png" alt="Logo" class="logo" />
+        <a href="#">
+          <img src="./IMGS/Logo.png" alt="Logo" class="logo" />
+        </a>
+
         <div class="menu-hamburguer">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -31,7 +39,7 @@
         <ul class="nav-list">
           <li><a href="#about">Sobre</a></li>
           <li><a href="#tecnologies">Tecnologias</a></li>
-          <li><a href="#projects">Projetos</a></li>
+          <li><a href="./projects.html">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
@@ -55,9 +63,9 @@
       </section>
       <!-- Section About -->
       <section id="about">
-        <div style="color: gold">
+        <div>
           <h1>Sobre mim!</h1>
-          <a href="">dfdfs</a>
+
           <p>
             Meu nome é Lucas Vieira Brito, tenho 20 anos e estudo engenharia de
             computação na Puc-Campinas, sempre gostei muito de tecnologia
@@ -65,143 +73,109 @@
             como ela funciona. Gosto muito de aprender coisas novas e estou
             sempre em busca de melhorar tanto como pessoal e profissionalmente
           </p>
+          <div>
+            <h2>Formas para saber mais de mim!</h2>
+            <div class="about-more">
+              <a
+                class="about-more-sections"
+                href="https://www.linkedin.com/in/lucas-vieira-9a2244197/"
+                ><i class="bi bi-linkedin"></i>
+                <p>Linkedin</p></a
+              ><a
+                class="about-more-sections"
+                href="https://github.com/vieiralucas22"
+                ><i class="bi bi-github"></i>
+                <p>Github</p></a
+              >
+              <a href="#Contact" class="about-more-sections">
+                <i class="bi bi-envelope-at-fill"></i>
+                <p>lucasvieirabrit@gmail.com</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <img class="about-img" src="" alt="Imagem de Lucas" />
       </section>
       <!-- Section Tecnologies -->
       <section id="tecnologies">
         <h1>Tecnologias</h1>
         <div>
           <articles class="tech">
-            <img src="./IMGS/HTML.png" alt="HTML" />
+            <i class="fa-brands fa-html5"></i>
             <h3>HTML</h3>
           </articles>
           <articles class="tech">
-            <img src="./IMGS/CSS.png" alt="CSS" />
+            <i class="fa-brands fa-css3-alt"></i>
             <h3>CSS</h3>
           </articles>
           <articles class="tech">
-            <img src="./IMGS/JS.png" alt="Javascript" />
+            <i class="fa-brands fa-js"></i>
             <h3>Javascript</h3>
           </articles>
           <articles class="tech">
-            <img src="./IMGS/React.png" alt="React" />
+            <i class="fa-brands fa-react"></i>
             <h3>React</h3>
           </articles>
           <articles class="tech">
-            <img src="./IMGS/Node.png" alt="NodeJS" />
+            <i class="fa-brands fa-node-js"></i>
             <h3>NodeJS</h3>
           </articles>
           <articles class="tech">
-            <img src="./IMGS/Git.png" alt="Git" />
+            <i class="fa-brands fa-git-alt"></i>
             <h3>Git</h3>
           </articles>
         </div>
       </section>
-      <!-- Section Projects -->
-      <section id="projects">
-        <h1>Projects</h1>
-        <div>
-          <article class="project">
-            <img
-              class="img-project"
-              src="./IMGS/JS-project.png"
-              alt="Projeto calculadora"
-            />
-            <div class="area-button-projects">
-              <a
-                class="button-project"
-                href="https://github.com/vieiralucas22/Calculator"
-              >
-                <i class="bi bi-github"></i>
-              </a>
-              <a
-                class="button-project"
-                href="https://vieiralucas22.github.io/Calculator/"
-              >
-                <i class="bi bi-eye-fill"></i>
-              </a>
-            </div>
-          </article>
-          <article class="project">
-            <img
-              class="img-project"
-              src="./IMGS/JS-project.png"
-              alt="Projeto Todo list"
-            />
-            <div class="area-button-projects">
-              <a
-                class="button-project"
-                href="https://github.com/vieiralucas22/To-do-list"
-              >
-                <i class="bi bi-github"></i>
-              </a>
-              <a
-                class="button-project"
-                href="https://vieiralucas22.github.io/To-do-list/"
-              >
-                <i class="bi bi-eye-fill"></i>
-              </a>
-            </div>
-          </article>
-          <article class="project">
-            <img
-              class="img-project"
-              src="./IMGS/JS-project.png"
-              alt="Projeto Snake game"
-            />
-            <div class="area-button-projects">
-              <a
-                class="button-project"
-                href="https://github.com/vieiralucas22/Snake-Game"
-              >
-                <i class="bi bi-github"></i>
-              </a>
-              <a
-                class="button-project"
-                href="https://vieiralucas22.github.io/Snake-Game/"
-              >
-                <i class="bi bi-eye-fill"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+
       <!-- Section Contact -->
 
-      <section>
+      <section id="Contact">
+        <h1>Contato</h1>
+
         <form>
           <div>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" />
+            <!-- <label for="name">Nome</label> -->
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome"
+            />
           </div>
           <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <!-- <label for="email">Email</label> -->
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu melhor email"
+            />
           </div>
           <div>
-            <label for="subject">Assunto</label>
-            <input type="text" subject="subject" id="subject" />
+            <!-- <label for="subject">Assunto</label> -->
+            <input
+              type="text"
+              subject="subject"
+              id="subject"
+              placeholder="Assunto"
+            />
           </div>
           <div>
-            <label for="description">Descrição</label>
+            <!-- <label for="description">Descrição</label> -->
             <textarea
+              placeholder="Escreva sua mensagem"
               name="description"
               id="description"
               cols="30"
               rows="10"
             ></textarea>
           </div>
+          <button class="button">Enviar</button>
         </form>
       </section>
     </main>
 
     <footer class="container">
-      <h2>Desenvolvido por Lucas Vieira Brito</h2>
-      <div class="icons">
-        <i class="bi bi-github"></i>
-        <i class="bi bi-linkedin"></i>
-      </div>
+      <h2>&copy Todos os direitos reservados Lucas Vieira</h2>
     </footer>
     <script src="./JS/navbar.js"></script>
   </body>
