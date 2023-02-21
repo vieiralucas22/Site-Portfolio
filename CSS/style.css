@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 :root {
-  --background-color: #1d1b1b;
+  --background-color: #212121;
   --background-color-secundary: #171717;
   --primary-color: #bb1d24;
   --secundary-color: #ededed;
@@ -107,7 +107,7 @@ h1 {
   padding: 15px;
   font-size: 1.125rem;
 }
-a.button:hover {
+.button:hover {
   background-color: var(--primary-color);
   color: var(--secundary-color);
 }
@@ -135,7 +135,8 @@ a.button:hover {
 }
 
 /* Section Skills */
-#tecnologies {
+#tecnologies,
+#projects {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -143,11 +144,14 @@ a.button:hover {
   align-items: center;
   row-gap: 25px;
 }
-#tecnologies div {
+#tecnologies div,
+#projects div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--background-color);
 }
+
 .tech {
   max-width: 10rem;
   display: flex;
@@ -159,11 +163,36 @@ a.button:hover {
   border-radius: 10px;
   margin: 5px;
 }
-.tech:hover {
-  background-color: var(--primary-color);
-}
 
 /* Projects */
+#projects article img {
+  width: 17rem;
+}
+.project {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+.img-project {
+  width: 10px;
+  border-c;
+}
+
+.area-button-projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-project {
+  border: 1px solid red;
+  border-radius: 10px 25px;
+  padding: 0.5rem 2.5rem;
+  font-size: 2rem;
+}
+.button-project:hover {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+}
 
 /* Media queries */
 
