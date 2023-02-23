@@ -22,7 +22,7 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  opacity: 0.7;
+  color: var(--secundary-color);
 }
 .logo {
   width: 3.5rem;
@@ -159,7 +159,6 @@ h1 {
 
 /* Section Skills */
 #tecnologies,
-#projects,
 #Contact,
 #about {
   min-height: 100vh;
@@ -174,9 +173,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 2rem;
   background-color: var(--background-color);
 }
-
+#tecnologies div:hover > .tech:not(:hover) {
+  transform: scale(0.65);
+  opacity: 0.3;
+}
 .tech {
   max-width: 10rem;
   display: flex;
@@ -200,6 +203,48 @@ h1 {
 
 /* Projects */
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+#projects h1 {
+  margin: 2rem 0 3rem 0;
+}
+.card {
+  transition: 0.8s;
+  text-align: center;
+  width: 12rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 22px 22px 44px #171717, -22px -22px 44px #2b2b2b;
+}
+.card:hover {
+  transform: scale(1.15);
+}
+.card:hover .project-flag {
+  color: var(--primary-color);
+}
+.card:hover h2 {
+  color: var(--primary-color);
+}
+.project-flag {
+  font-size: 8rem;
+}
+.btn-project {
+  display: flex;
+  justify-content: space-around;
+}
+.card div a {
+  font-size: 2.5rem;
+  color: var(--secundary-color);
+}
+.card div a:hover {
+  color: var(--primary-color);
+}
 /* Contact */
 
 form {
