@@ -369,8 +369,14 @@ footer h2:hover {
   /* Projects */
   #projects {
     display: flex;
+    justify-content: flex-start;
+  }
+  #projects div {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
+    margin: 0 2rem;
   }
 
   /* Contact */
@@ -408,9 +414,17 @@ footer h2:hover {
     justify-content: space-around;
   }
   .welcome {
-    width: 40rem;
+    max-width: 40rem;
   }
   .btn-home a {
     font-size: 1.35rem;
+  }
+
+  /* About */
+  .about-more {
+    column-gap: 6rem;
+  }
+  .about-more-sections {
+    font-size: 5rem;
   }
 }
